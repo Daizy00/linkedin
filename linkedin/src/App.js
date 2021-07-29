@@ -31,7 +31,7 @@ function App() {
         // user is logged out
       }
     });
-  }, []);
+  }, [dispatch]); //added dispatch to dependency array to prevent the bug
 
   return (
     <div className="app">
